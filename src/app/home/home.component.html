@@ -1,0 +1,33 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header color="light">
+      <ion-toolbar color="warning">
+        <ion-title color="light">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"><a (click)="logOut()">Se déconnecter</a></ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="warning">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title color="light">Aloha Checkin</ion-title>
+      </ion-toolbar>
+      <ion-toolbar color="warning">
+        <ion-label color="light">Mon salon 2023</ion-label>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding ion-text-center" color="light">
+      <div class="form-homepage">
+        <ion-card color="medium">
+          <ion-card-header>
+            <ion-card-title>En attente d'un scan</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-button color="warning" onclick="openCamera()">Scanner</ion-button>
+      </div>
+    </ion-content>
+  </div>
+</ion-app>

@@ -1,0 +1,30 @@
+
+<ion-app >
+  <ion-header>
+    <ion-toolbar color="warning">
+      <ion-title color="light">{{title}}</ion-title>
+    </ion-toolbar>
+    <ion-toolbar color="warning">
+      <ion-label color="light">Identification</ion-label>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding ion-text-center" color="light">
+      <div class="form-homepage"  >
+        <h1>Saisissez votre code événement</h1>
+        <ion-item>
+            <ion-input name="input" type="text" color="dark" (keyup)="inputValue($event)"></ion-input>
+        </ion-item>
+        <ion-button color="warning" (click)="login()">
+            <ion-label color="light">Se connecter</ion-label>
+        </ion-button>
+      </div>
+  </ion-content>
+  <ion-footer class="ion-no-border">
+    <ion-toolbar class="ion-text-center">
+      <ion-label >Version 1.0</ion-label>
+    </ion-toolbar>
+    <ion-toolbar class="ion-text-center">
+      <ion-label > Développé par Mediactive Events </ion-label>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>
